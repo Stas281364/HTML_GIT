@@ -1,0 +1,192 @@
+body{
+    
+}
+
+.container{
+    width: 1142px;
+    margin: 0 auto;
+}
+
+/**************************************************** ХЕДР Начало ****************************************************/
+
+.header{
+    
+    /*расположил объекты внутри по флексу*/
+    display: flex;
+    /*назначил расстояние контента между собой - у меня два контента это header__left и  header__right*/
+    justify-content: space-between;
+    align-items: center;
+    border:  #DDDDDD;
+}
+
+.header ol{
+    /*расположил объекты внутри по флексу*/
+    display: flex;
+    /*назначил расстояние контента между собой - у меня два контента это header__left и  header__right*/
+    justify-content: space-between;
+    align-items: center;
+    
+    box-sizing: border-box; padding-left: 0px;/*Убрать лишний педдинг */
+
+}
+
+.header li{
+
+    list-style: none;   /*убрал значки у перечислителей*/
+    margin-right: 10px; /*для того чтобы текст не наваливался */
+}
+
+.name{
+    color: #45536D;
+    font-family: Podkova;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 36.4px */
+    text-transform: uppercase;
+}
+
+.motto{
+    color: #434A5C;
+    font-family: OpenSans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 128%; /* 17.92px */
+}
+
+.link{
+    color: #45536D;
+    font-family: OpenSans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 18.2px */
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+
+.number{
+    color: #3D3D3D;
+    font-family: Podkova;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 26px */
+    text-transform: uppercase;
+}
+
+.grey_border{
+    border-bottom: 1px solid gray;
+    width: 1142px;
+    height: 1px;
+    
+}
+
+/**************************************************** ХЕДР Конец ****************************************************/
+
+/*******************************************************************************************************************/
+
+/**************************************************** Навигация Начало **********************************************/
+
+.nav{
+    /*расположил объекты внутри по флексу*/
+    display: flex;
+    /*назначил расстояние контента между собой - у меня два контента это header__left и  header__right*/
+    justify-content: space-between;
+    align-items: center;
+    border:  #DDDDDD;
+}
+
+.nav ol{
+    /*расположил объекты внутри по флексу*/
+    display: flex;
+    /*назначил расстояние контента между собой - у меня два контента это header__left и  header__right*/
+    justify-content: space-between;
+    align-items: center;
+    
+    box-sizing: border-box; padding-left: 0px;/*Убрать лишний педдинг */
+
+}
+
+.nav li{
+
+    list-style: none;   /*убрал значки у перечислителей*/
+    margin-right: 10px; /*для того чтобы текст не наваливался */
+
+    color: #7A7A7A;
+    font-family: OpenSans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 18.2px */
+    text-transform: uppercase;
+}
+/**************************************************** Навигация Конец **********************************************/
+
+/*******************************************************************************************************************/
+
+/**************************************************** Мейн начало **********************************************/
+
+/**************************************************** Развлечения начало*/
+
+.entertainments__slogan{
+    width: 735px;
+    margin-top: 80px;   /*ДЛя отспута после картинки*/
+
+    color: #141414;
+    font-family: Podkova;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.entertainments__title{
+
+    margin-top: 55px;   /*ДЛя отспута после ДЕВИЗА - Отдыхай на курорте Синий луг*/
+
+    color: #BF6024;
+    font-family: Podkova;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 128%; /* 35.84px */
+}
+
+.entertainments__block{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /*2 объекта по ширине фрагмента*/
+    grid-template-rows: auto 1fr;
+    /* Отступы */
+    column-gap: 30px;
+    /* Отступы */
+    row-gap: 20px;
+}
+
+.entertainments .item{
+    width: 555px;
+    height: 300px;
+    flex-shrink: 0;
+
+    padding: 10px;
+}
+
+.entertainments .item__text{
+    width: 384px;
+
+    color: #141414;
+    font-family: OpenSans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 128%; /* 20.48px */
+    text-transform: uppercase;
+}
+
+
+/**************************************************** Развлечения конец*/
+
+/**************************************************** Мейн конец **********************************************/
